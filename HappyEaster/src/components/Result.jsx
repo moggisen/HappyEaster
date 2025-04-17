@@ -6,13 +6,13 @@ const Result = ({ score, total, onRestart }) => (
     <h2>
       Du fick {score} av {total} rätt!
     </h2>
-    <button onClick={onRestart}>Spela igen</button>
+    <button className="quiz-button" onClick={onRestart}>Spela igen</button>
   </div>
 );
 
 Result.propTypes = {
   score: PropTypes.number.isRequired,
-  total: Proptypes.number.isReauired,
+  total: PropTypes.number.isReauired,
   onRestart: PropTypes.func.isRequired,
 };
 

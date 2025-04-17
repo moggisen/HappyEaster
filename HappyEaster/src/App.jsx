@@ -16,7 +16,7 @@ const {
   return (
    <div className="quiz-container">
     <h1>🐣 PåskQuiz 🐣</h1>
-    {isFinished} ? (
+    {isFinished ? (
       <Result score={score} total={totalQuestions} onRestart={restart} />
     ) : (
       <Question 
@@ -24,7 +24,7 @@ const {
       options={currentQuestion.options}
       onAnswer={handleAnswer}
       />
-    )
+    )}
    </div>
   );
 }

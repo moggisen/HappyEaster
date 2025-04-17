@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import Button from "./Button"
 
 const Question = ({ question, options, onAnswer }) => (
   <div className="card">
